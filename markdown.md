@@ -1,7 +1,7 @@
 # Markdown cheat sheet
 ````
-# h1   // First level header
-## h2  // Second level header and so on
+# First level header
+## Second level header and so on
 
 **bold text** or __another bold text__
 *italicized text* or _another italic_
