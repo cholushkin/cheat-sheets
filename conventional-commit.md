@@ -49,7 +49,8 @@ tags: #cart #error-handling
 	    - Think of `This commit will...` or `This commit should...`
 
 # Change log resulting categories
-Added, Changed, Deprecated, Removed, Fixed, Security
+`Added`, `Changed`, `Deprecated`, `Removed`, `Fixed`, `Security`
+
 # Examples
 Most generic commit when you don't want to think at all:
 ```
