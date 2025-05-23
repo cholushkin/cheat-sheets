@@ -7,11 +7,15 @@
 | **Skip**      | Skips the first N elements             | `var skipFirstThree = numbers.Skip(3);`       |
 | **SkipWhile** | Skips elements while condition is true | `var result = numbers.SkipWhile(n => n < 4);` |
 
+-----
+
 | Projection (Transforming Data) | Description                         | Example                                               |
 | ------------------------------ | ----------------------------------- | ----------------------------------------------------- |
 | **Select**                     | Projects elements                   | `var squared = numbers.Select(n => n * n);`           |
 | **SelectMany**                 | Flattens a sequence of sequences    | `var flat = lists.SelectMany(l => l);`                |
 | **Zip**                        | Combines two sequences element-wise | `var zipped = numbers.Zip(letters, (n, l) => n + l);` |
+
+-----
 
 | Sorting            | Description                           | Example |
 |-------------------|--------------------------------------|---------|
@@ -21,11 +25,15 @@
 | **ThenByDescending** | Secondary sorting in descending order | `var sorted = numbers.OrderBy(n => n).ThenByDescending(n => n % 2);` |
 | **Reverse**      | Reverses sequence order             | `var reversed = numbers.Reverse();` |
 
+-----
+
 | Grouping and Joining | Description                           | Example |
 |----------------------|--------------------------------------|---------|
 | **GroupBy**        | Groups elements by a key            | `var grouped = numbers.GroupBy(n => n % 2 == 0);` |
 | **Join**           | Joins two sequences on a key        | `var joined = students.Join(courses, s => s.CourseId, c => c.CourseId, (s, c) => new { s.Name, c.CourseName });` |
 | **GroupJoin**      | Groups matching elements from both sequences | `var groupJoined = students.GroupJoin(courses, s => s.CourseId, c => c.CourseId, (s, cs) => new { s.Name, Courses = cs });` |
+
+-----
 
 | Set Operations     | Description                           | Example |
 |--------------------|--------------------------------------|---------|
@@ -34,11 +42,15 @@
 | **Except**       | Removes elements from another sequence | `var difference = numbers.Except(new List<int> { 1, 2 });` |
 | **Concat**       | Concatenates two sequences          | `var combined = numbers.Concat(new List<int> { 6, 7 });` |
 
+-----
+
 | Quantifiers (Checking Conditions) | Description                           | Example |
 |-----------------------------------|--------------------------------------|---------|
 | **Any**           | Checks if any element matches a condition | `bool hasEven = numbers.Any(n => n % 2 == 0);` |
 | **All**           | Checks if all elements match a condition | `bool allEven = numbers.All(n => n % 2 == 0);` |
 | **Contains**      | Checks if a sequence contains a value | `bool hasThree = numbers.Contains(3);` |
+
+-----
 
 | Element Selection  | Description                           | Example |
 |--------------------|--------------------------------------|---------|
@@ -51,6 +63,8 @@
 | **ElementAt**    | Retrieves an element at an index    | `var item = numbers.ElementAt(2);` |
 | **ElementAtOrDefault** | Retrieves an element or default if index is out of range | `var item = numbers.ElementAtOrDefault(10);` |
 
+-----
+
 | Aggregation   | Description                        | Example                                         |
 | ------------- | ---------------------------------- | ----------------------------------------------- |
 | **Count**     | Counts elements matching condition | `var count = numbers.Count(n => n % 2 == 0);`   |
@@ -60,6 +74,8 @@
 | **Average**   | Calculates the average             | `var average = numbers.Average();`              |
 | **Aggregate** | Applies a function over a sequence | `var sum = numbers.Aggregate((a, b) => a + b);` |
 
+-----
+
 | Conversion        | Description                           | Example |
 |-------------------|--------------------------------------|---------|
 | **ToList**       | Converts to a list                  | `var list = numbers.ToList();` |
@@ -68,10 +84,14 @@
 | **Cast**         | Casts elements to a type            | `var casted = objects.Cast<int>();` |
 | **OfType**       | Filters elements by type           | `var ints = objects.OfType<int>();` |
 
+-----
+
 | Execution Types  | Description                           | Example |
 |-----------------|--------------------------------------|---------|
 | **Deferred Execution** | Queries execute when iterated | `var query = numbers.Where(n => n > 3);` |
 | **Immediate Execution** | Executes immediately         | `var list = query.ToList();` |
+
+-----
 
 | Anonymous Types  | Description                           | Example |
 |-----------------|--------------------------------------|---------|
