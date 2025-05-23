@@ -1,5 +1,16 @@
-# My cheat sheets collection
-Collection of different usefull cheat sheets for printing in markdown format
+# 📚 Cheat Sheets Collection
 
-- [Markdown cheat sheet](markdown.md)
-- [Conventional commit cheat sheet](conventional-commit.md)
+A handy collection of cheat sheets for quick reference.
+
+---
+
+## 🗂 Directory Structure
+
+- [`conventional-commit/`](./conventional-commit) – Cheat sheet for conventional commit messages.
+- [`json/`](./json) – Cheat sheet for JSON syntax and usage.
+- [`markdown/`](./markdown) – Cheat sheet for Markdown formatting and syntax.
+- [`stable-diffusion/`](./stable-diffusion) – Cheat sheet for Stable Diffusion prompts and tips.
+
+---
+
+**Keep this handy for quick look-ups!**
