@@ -10,6 +10,7 @@ A handy collection of cheat sheets for quick reference.
 - [`json/`](./json) – Cheat sheet for JSON syntax and usage.
 - [`markdown/`](./markdown) – Cheat sheet for Markdown formatting and syntax.
 - [`stable-diffusion/`](./stable-diffusion) – Cheat sheet for Stable Diffusion prompts and tips.
+- [`linq/`](./linq) – Cheat sheet for LINQ syntax and queries.
 
 ---
 
